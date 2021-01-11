@@ -1,5 +1,9 @@
 ﻿<h1>Coding Events</h1>
 
+<p>
+    <a asp-controller="Events" asp-action="Add">Add Event</a> @*to be redirected to events add page*@
+</p>
+
 @if (ViewBag.events.Count == 0)
 {
     <p>No events yet!</p>
