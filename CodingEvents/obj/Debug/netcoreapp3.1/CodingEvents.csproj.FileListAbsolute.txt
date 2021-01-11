@@ -36,3 +36,4 @@ C:\Users\racir\source\repos\LaunchCode\csharpClass10ViewsMVC\ViewsPracticeCoding
 C:\Users\racir\source\repos\LaunchCode\csharpClass10ViewsMVC\ViewsPracticeCodingEvents\CodingEvents\CodingEvents\obj\Debug\netcoreapp3.1\CodingEvents.pdb
 C:\Users\racir\source\repos\LaunchCode\csharpClass10ViewsMVC\ViewsPracticeCodingEvents\CodingEvents\CodingEvents\obj\Debug\netcoreapp3.1\CodingEvents.genruntimeconfig.cache
 C:\Users\racir\source\repos\LaunchCode\csharpClass10ViewsMVC\ViewsPracticeCodingEvents\CodingEvents\CodingEvents\obj\Debug\netcoreapp3.1\CodingEvents.csproj.CopyComplete
+C:\Users\racir\source\repos\LaunchCode\csharpClass10ViewsMVC\ViewsPracticeCodingEvents\CodingEvents\CodingEvents\obj\Debug\netcoreapp3.1\Razor\Views\Events\Add.cshtml.g.cs
