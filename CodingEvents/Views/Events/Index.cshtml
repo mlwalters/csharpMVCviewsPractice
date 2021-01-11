@@ -1,0 +1,13 @@
+﻿<h1>Coding Events</h1>
+
+@if (ViewBag.events.Count == 0)
+{
+    <p>No events yet!</p>
+}
+
+<ul>
+    @foreach (string meeting in ViewBag.events)
+    {
+        <li>@meeting</li>
+    }
+</ul>
