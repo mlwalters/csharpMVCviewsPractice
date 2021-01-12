@@ -20,6 +20,7 @@ namespace CodingEvents.Controllers
 
         public IActionResult Index()
         {
+            // ViewData["Title"] = "Hello hello"; --- same as ViewBag
             return View();
         }
 

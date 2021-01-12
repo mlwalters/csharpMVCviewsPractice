@@ -4,15 +4,28 @@
     <a asp-controller="Events" asp-action="Add">Add Event</a> @*to be redirected to events add page*@
 </p>
 
-@if (ViewBag.events.Count == 0)
+@if (ViewBag.listOfEvents.Count == 0)
 {
     <p>No events yet!</p>
 }
+else
+{
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+    </tr>
 
-<ul>
-    @foreach (string meeting in ViewBag.events)
+    @foreach (KeyValuePair<string, string> evt in ViewBag.listOfEvents) // KeyValuePair<string, string>
     {
-        <li>@meeting</li>
+        <tr>
+            <td>@evt.Key</td>
+            <td>@evt.Value</td>
+        </tr>
     }
-</ul>
+</table>
+
+}
+
+
 
