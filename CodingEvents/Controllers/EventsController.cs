@@ -42,7 +42,7 @@ namespace CodingEvents.Controllers
         [Route("/Events/Add")]
         public IActionResult NewEvent(string name, string description)
         {
-
+            listOfEvents.Add(name, description);
             return Redirect("/Events");
         }
     }
