@@ -10,31 +10,30 @@
 }
 else
 {
-<table class="table">
-    <tr>
-        <th>ID</th>
-        <th>Name</th>
-        <th>Description</th>
-    </tr>
-
-    @*@foreach (KeyValuePair<string, string> evt in ViewBag.listOfEvents) // KeyValuePair<string, string>
-    {
+    <table class="table">
         <tr>
-            <td>@evt.Key</td>
-            <td>@evt.Value</td>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Description</th>
         </tr>
-    }*@
 
-    @foreach (var evt in ViewBag.Events) 
-    {
-        <tr>
-            <td>@evt.Id</td>
-            <td>@evt.Name</td>
-            <td>@evt.Description</td>
-        </tr>
-    }
-</table>
+        @*@foreach (KeyValuePair<string, string> evt in ViewBag.listOfEvents) // KeyValuePair<string, string>
+        {
+            <tr>
+                <td>@evt.Key</td>
+                <td>@evt.Value</td>
+            </tr>
+        }*@
 
+        @foreach (var evt in ViewBag.Events) 
+        {
+            <tr>
+                <td>@evt.Id</td>
+                <td>@evt.Name</td>
+                <td>@evt.Description</td>
+            </tr>
+        }
+    </table>
 }
 
 

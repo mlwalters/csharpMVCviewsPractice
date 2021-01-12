@@ -8,6 +8,7 @@ namespace CodingEvents.Data
 {
     public class EventData
     {
+        // Store events in a Dictionary
         static private Dictionary<int, Event> Events = new Dictionary<int, Event>();
 
         // GetAll
