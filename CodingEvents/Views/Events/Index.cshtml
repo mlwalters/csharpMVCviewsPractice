@@ -3,6 +3,9 @@
 <p>
     <a asp-controller="Events" asp-action="Add">Add Event</a> @*to be redirected to events add page*@
 </p>
+<p>
+    <a asp-controller="Events" asp-action="Delete">Delete Event</a> @*to be redirected to events page*@
+</p>
 
 @if (ViewBag.events.Count == 0)
 {

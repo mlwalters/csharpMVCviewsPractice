@@ -42,11 +42,28 @@ namespace CodingEvents.Controllers
             return View();
         }
 
-        [HttpPost]  //annotations
+        [HttpPost]  //annotations, request type attribute
         [Route("/Events/Add")]
         public IActionResult NewEvent(string name, string description)
         {
             EventData.Add(new Event(name, description));
+
+            return Redirect("/Events");
+        }
+
+        public IActionResult Delete()
+        {
+            ViewBag.events = EventData.GetAll();
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Delete(int[] eventIds)
+        {
+            foreach(int eventId in eventIds)
+            {
+                EventData.Remove(eventId);
+            }
 
             return Redirect("/Events");
         }
