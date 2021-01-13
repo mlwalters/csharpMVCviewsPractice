@@ -7,36 +7,30 @@
     <a asp-controller="Events" asp-action="Delete">Delete Event</a> @*to be redirected to events page*@
 </p>
 
+
 @if (ViewBag.events.Count == 0)
 {
     <p>No events yet!</p>
 }
 else
 {
-    <table class="table">
+<table class="table">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Description</th>
+    </tr>
+
+    @foreach (var evt in ViewBag.Events)
+    {
         <tr>
-            <th>ID</th>
-            <th>Name</th>
-            <th>Description</th>
+            <td>@evt.Id</td>
+            <td>@evt.Name</td>
+            <td>@evt.Description</td>
+            <td><a asp-controller="Events" asp-action="Edit" asp-route-id="@evt.Id">Edit Event</a></td>
         </tr>
-
-        @*@foreach (KeyValuePair<string, string> evt in ViewBag.listOfEvents) // KeyValuePair<string, string>
-        {
-            <tr>
-                <td>@evt.Key</td>
-                <td>@evt.Value</td>
-            </tr>
-        }*@
-
-        @foreach (var evt in ViewBag.Events) 
-        {
-            <tr>
-                <td>@evt.Id</td>
-                <td>@evt.Name</td>
-                <td>@evt.Description</td>
-            </tr>
-        }
-    </table>
+    }
+</table>
 }
 
 
